@@ -7,7 +7,7 @@
     <title>Pokedex - Seus Pokemons</title>
 </head>
 <body>
-<h1 align="center" >Seus Pokemons</h1>
+<center><img style="margin: 5px; height: 140px;"  src="https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png"> </img>
 
 <table id="tabela" width="100%" border="1" bgcolor="gainsboro">
     <tr>
@@ -43,9 +43,9 @@
 </table>
 <center>
 <div><br>
-<a href="/pokedexoriginal"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Ver <b>Pokedex</b> Versão Cards</button></a>
-<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Voltar a Página Inicial</button></a>
-<a href="/pokedex/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Cadastrar mais <b>Pokemons</b></button></a>
+<a href="/pokedexoriginal"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Ver <b>Pokedex</b> Versão Cards</button></a>
+<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Voltar para a <b>Página Inicial</b></button></a>
+<a href="/pokedex/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Cadastrar mais <b>Pokemons</b></button></a>
 </div>
 </center>
 <br>

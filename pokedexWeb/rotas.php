@@ -32,7 +32,7 @@ switch($url)
 
     default:
     {
-        PokedexController::indexOriginal();
+        include 'E:\Matérias\PRO_WEB\WEB II\projeto-pokedex\pokedexWeb\View\modules\PgInicial\PgInicial.php';
     break;
     }
 }

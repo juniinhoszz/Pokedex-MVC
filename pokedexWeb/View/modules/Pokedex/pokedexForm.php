@@ -12,44 +12,44 @@
     }
     </style>
 </head>
-<body style="background-color:#424242 ;">
+<body style="background-color:white ;">
 <div>
 <form action="/pokedex/save" method="post">
     <center>
-        <fieldset style="height: 430px; width:10px; margin:6%;background-color: #989a91;">
+        <fieldset style="height: 453px; width:10px; margin:6%;background-color:mediumpurple; border-radius:15px; border:solid #302f95 4px;">
             
 
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
-            <label for="nome" >Nome do Pokemon:</label>
+            <label for="nome" ><b>Nome do Pokemon:</b></label>
             <input name="nome" id="nome" type="text" value="<?= $model->nome ?>" style=" height:20px;"/>
 
-            <label for="descricao">Descrição do Pokemon:</label> 
+            <label for="descricao"><b>Descrição do Pokemon:</b></label> 
             <!--<input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>" style="background:#484d50; color:white; height:60px; "/>-->
             <textarea rows="9" cols="21" maxlength="500" name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>" style=""><?= $model->descricao ?></textarea>
 
-            <label for="tipo" >Tipo do Pokemon:</label>
+            <label for="tipo" ><b>Tipo do Pokemon:</b></label>
             <input name="tipo" id="tipo" type="text" value="<?= $model->tipo ?>" style=" height:20px;"/>
             
-            <label for="linkfoto" >Link da Imagem do Pokemon:</label>
+            <label for="linkfoto" ><b>Link da Imagem do Pokemon:</b></label>
             <input name="linkfoto" id="linkfoto" type="url" value="<?= $model->linkfoto ?>" style=" height:20px;"/>
             
-            <label for="id" >Numero do Pokemon:</label>
+            <label for="id" ><b>Numero do Pokemon:</b></label>
             <input type="text" value="#<?= $model->id ?>" name="id" disabled="" style=" height:20px;"/>
              
             
 
             <br>
-            <button type="submit" style="background-color:#E3350D ; height:60px; width:180px; font-size:17px;color:white;border-radius:15px"><?php if(empty($model->id)): ?>Cadastrar Pokemon <?php else:?> Atualizar Pokemon<?php endif?></button>
+            <button type="submit" style="background-color:#fdd02f;border: solid #302f95 4px;color:black; height:60px; width:180px; font-size:17px;color:black;border-radius:15px"><?php if(empty($model->id)): ?>Cadastrar Pokemon <?php else:?> Atualizar Pokemon<?php endif?></button>
 
         </fieldset></center>
     </form></div>    
     <br>
     <center>
 <div><br>
-<a href="/pokedexoriginal"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Ver <b>Pokedex</b> Versão Cards</button></a>
-<a href="/pokedex"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Ver <b>Pokedex</b> Versão Tabela</button></a>
-<a href="/pokedex/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Cadastrar mais <b>Pokemons</b></button></a>
+<a href="/pokedexoriginal"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Ver <b>Pokedex</b> Versão Cards</button></a>
+<a href="/pokedex"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Ver <b>Pokedex</b> Versão Tabela</button></a>
+<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Voltar para a <b>Página Inicial</b></button></a>
 </div>
 <br>
 </center>

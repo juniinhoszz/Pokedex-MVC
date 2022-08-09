@@ -11,8 +11,8 @@
 <body>
     
 
-<h1 align="center" style="margin: 5px;">Seus Pokemons</h1>
 
+<center><img style="margin: 10px; height: 140px;"  src="https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png"> </img>
 
 
 <center>
@@ -20,7 +20,7 @@
 
 
 <?php foreach($model->rows as $item): ?>
-<div class="card" style="width: 248px; margin:7px; font-size: 16px; display:inline-flex;max-width: 300px; border:solid black 1px; box-shadow: 5px 5px 5px black;">
+<div class="card" style="width: 248px; margin:7px; font-size: 16px; display:inline-flex;max-width: 300px; border: solid #302f95 3px; box-shadow: 5px 5px 5px black;">
   <img src="<?= $item['linkfoto'] ?>" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title" style="color:#212121;font-size:20px"><?= $item['nome'] ?> <p style="color:#616161;font-size:18px">N°<?= $item['id'] ?></p></h5>
@@ -43,14 +43,14 @@
 <?php if(count($model->rows) == 0): ?>
   <br>
   <div style="border:solid black 2px; border-radius:15px; height:30px; width:250px"
-  <h1 align="center" style="margin: 5px;"><b>Nenhum Pokemon Cadastrado.</b></h1></div>
+  <h1 align="center" style="margin: 5px; font-size:50px"><b>Nenhum Pokemon Cadastrado.</b></h1></div>
         <?php endif ?>
 
 
 <div><br>
-<a href="/pokedex"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Ver <b>Pokedex</b> Versão Tabela</button></a>
-<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Voltar a Página Inicial</button></a>
-<a href="/pokedex/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#E3350D;border: 1 solid black;color:white; border-radius:15px" >Cadastrar mais <b>Pokemons</b></button></a>
+<a href="/pokedex"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Ver <b>Pokedex</b> Versão Tabela</button></a>
+<a href="/"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Voltar para a <b>Página Inicial</b></button></a>
+<a href="/pokedex/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#fdd02f;border: solid #302f95 6px;color:black; border-radius:15px" >Cadastrar mais <b>Pokemons</b></button></a>
 </div>
 </center>
 <br>
